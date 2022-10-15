@@ -21,7 +21,24 @@
  */
 
 // Finish the code of the function
-function exercise17() {}
+function exercise17() {
+     fetch("https://jsonplaceholder.typicode.com/users/1")
+     .then(resp=> resp.json())
+     .then(displayContents)
+}
+
+/*Otra forma de hacerlo
+function exercise17(){
+return fetch ('https..')
+.then(
+    res => res.json()
+)
+.then (
+    res => displayContent(Res)
+);
+}*/
+
+
 
 // Don’t change the code bellow this line
 function displayContents(data) {

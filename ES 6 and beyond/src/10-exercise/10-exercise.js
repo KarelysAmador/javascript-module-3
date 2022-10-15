@@ -10,8 +10,12 @@
 
 // Finish the code of the function
 function exercise10() {
-    const message = "hello-world";
+    let message = "hello-world";
+    let messageArray = Array.from(message);
+
+    return(messageArray);
 }
+
 
 // Don’t change the code bellow this line
 export default exercise10;
