@@ -47,7 +47,3 @@ let ana = new Person ("Ana","Spark");
 
 // Don’t change the code bellow this line
 export { Person, ana };
-
-
-// Don’t change the code bellow this line
-export { Person, ana };
