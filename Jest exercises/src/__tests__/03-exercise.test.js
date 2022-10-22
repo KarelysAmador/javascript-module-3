@@ -5,11 +5,14 @@ import { multiplyNums, sanitizeUserData } from "../utils/matchers";
  */
 describe("03-exercises", () => {
   test("multiplyNums multiplies each number in the array by 2", () => {
+
     const numbers = [1, 2, 3, 4, 5];
     const expected = [2, 4, 6, 8, 10];
 
     expect(multiplyNums(numbers)).toEqual(expected);
 
+    //const result = multiplyNums(numbers);
+    //expect(result).toEqual(expected)
     /**
      * Make an assertion that the result of executing the multiplyNums function
      * with the `numbers` array as an argument, is equal to the `expected` array
@@ -19,9 +22,14 @@ describe("03-exercises", () => {
   });
 
   test("multiplyNums doesn't mutate the original array", () => {
+
     const numbers = [1, 2, 3, 4, 5];
 
     expect(multiplyNums(numbers)).not.toEqual(numbers);
+
+    //const numbers = [1, 2, 3, 4, 5];
+    //const result = multiplyNums (numbers);
+    //expect(result).not.toEqual(numbers);
 
     /**
      * Write an assertion that the array returned by the multiplyNums function
@@ -33,7 +41,9 @@ describe("03-exercises", () => {
     // Write the assertion
   });
 
+
   test("sanitizeUserData returns an object without sensitive information", () => {
+
     const safeUserData = {
       firstName: "Alex",
       lastName: "Marks",
@@ -50,6 +60,9 @@ describe("03-exercises", () => {
      expect(sanitizeUserData(userWithSensitiveInformation)).toEqual(
       safeUserData
     );
+
+    //const result = sanitizeUserData(userWithSensitiveInfotmation)
+    //expect (result).toEqual(safeUserData)
 
     /**
      * Finish the test so that it checks if the result of calling
