@@ -5,9 +5,14 @@ import { add } from "../utils/numbers";
  * of calling the add function with the arguments of
  * 2 and 4 is 6
  */
-describe("01-exercise", () => {
+  describe("01-exercise", () => {
   test("add return the sum of the numbers", () => {
-    expect.assertions(1);
+    const a =2;
+    const b =4;
+
+    const result= add(2,4);
+    
+    expect(result).toBe(6);
 
     // Finish the test
   });
