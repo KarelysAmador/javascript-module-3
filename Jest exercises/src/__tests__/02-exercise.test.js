@@ -17,22 +17,20 @@ describe("02-exercises", () => {
     // Finish the test
   });
   test("user1 is the same as user2", () => {
-    expect.assertions(1);
 
     const user1 = { name: "ana", phone: 678876567 };
     const user2 = user1;
 
-      expect(user2).toBe(user1);
+      expect(user1).toBe(user2);
 
     // Finish the test
   });
   test("user1 is not the same as user3", () => {
-    expect.assertions(1);
 
     const user1 = { name: "ana", phone: 678876567 };
     const user3 = { name: "ana", phone: 678876567 };
 
-     expect(user3).not.toBe(user1);
+     expect(user1).not.toBe(user3);
     // Finish the test
   });
 });
