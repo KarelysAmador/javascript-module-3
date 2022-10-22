@@ -9,8 +9,6 @@ import {
  */
 describe("04-exercises", () => {
   test("createUserObject returns a user object with the right properties", () => {
-    expect.assertions(3);
-
     /**
      * Write 3 assertions that check if executing the createUserObject function
      * with the following arguments:
@@ -32,10 +30,14 @@ describe("04-exercises", () => {
      */
 
     // Write the assertions
+
+    const resultado = createUserObject("Alex", "Spence", "alex@mail.com");
+    expect(resultado.firstName).toBeTruthy();
+    expect(resultado.lastName).toBeTruthy();
+    expect(resultado.email).toBeTruthy();
   });
 
   test("createCorporateEmailAddress appends the corporate email domain", () => {
-    expect.assertions(1);
 
     /**
      * Write an assertion using the `.toMatch()` matcher that the result
@@ -45,10 +47,11 @@ describe("04-exercises", () => {
      */
 
     // Write the assertion
+    expect(createCorporateEmailAddress("dani")).toMatch(/@company.com/);
   });
 
   test("generateRandomNumberFrom1to10 returns a number between 1 and 10", () => {
-    expect.assertions(2);
+
 
     /**
      * Write 2 assertions to check that the generateRandomNumberFrom1to10 function
@@ -56,5 +59,17 @@ describe("04-exercises", () => {
      */
 
     // Write the assertions
+
+  expect(generateRandomNumberFrom1to10()).toBeGreaterThan(0);
+  expect(generateRandomNumberFrom1to10()).toBeLessThan(11);
   });
 });
+
+
+
+
+
+
+
+
+    
