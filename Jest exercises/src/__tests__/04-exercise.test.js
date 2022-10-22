@@ -55,6 +55,8 @@ const result = createUserObject ("Alex", "Spence", "alex@mail.com");
 
   //const result = createCorporateEmailAddress("dani");
   //expect(result).toMatch(/@company.com/)
+
+  //se coloca entre slash porque es una expresión regular 
   test("generateRandomNumberFrom1to10 returns a number between 1 and 10", () => {
 
 
